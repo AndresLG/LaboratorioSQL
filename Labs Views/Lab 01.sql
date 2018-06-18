@@ -49,6 +49,6 @@ SELECT País=
 FROM Sales.SalesOrderHeader
     INNER JOIN Sales.SalesTerritory
     ON Sales.SalesOrderHeader.TerritoryID = Sales.SalesTerritory.TerritoryID
-GROUP BY Sales.SalesTerritory.CountryRegionCode, Sales.SalesTerritory.Name
+GROUP BY Sales.SalesTerritory.CountryRegionCode/*, Sales.SalesTerritory.Name*/
 ORDER BY Sales.SalesTerritory.CountryRegionCode
 GO
